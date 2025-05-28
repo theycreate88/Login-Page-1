@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#div1 {
+    width: 55%;
+    background-image: url('community.png');
+    background-size: cover;
+}
+
+#div2 {
+    width: 45%;
+    background-color: white;
+    padding-left: 80px;
+    padding-top: 30px;
+
+}
+
+#dots {
+    font-size: 30px;
+    padding-bottom: 30px;
+    opacity: 0.4;
+}
+
+#div2 h1 {
+    margin-bottom: 20px;
+    font-family: acumin-pro, Acumin Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+}
+
+
+#div2 p {
+    margin-bottom: 40px;
+    font-family: acumin-pro, Acumin Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    opacity: 0.4;
+}
+
+.enter {
+
+
+
+    border: none;
+    outline: none;
+}
+
+#enter1 {
+    border-left: 5px solid #08a4b4;
+}
+
+.input-wrapper {
+    margin-bottom: 8px;
+    height: 50px;
+
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding-left: 12px;
+    padding-top: 8px;
+    box-shadow: 0 0 8px rgba(117, 115, 115, 0.223);
+}
+
+label {
+    margin-bottom: 5px;
+    font-family: acumin-pro, Acumin Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    opacity: 0.4;
+    font-size: 12px;
+}
+
+#check-label {
+    margin-left: 5px;
+
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 160px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-family: acumin-pro, Acumin Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#login {
+    background-color: #08a4b4;
+    box-shadow: 0 0 16px #08a4b4;
+    border: none;
+    color: white;
+    transition: all 0.8s ease;
+   
+}
+
+#login:hover {
+    background-color: transparent;
+    border: 2px solid #08a4b4;
+    color: #08a4b4;
+    box-shadow: none;
+    transform: scale(1.05);
+   
+}
+
+#signup {
+    background-color: transparent;
+    border: 2px solid #08a4b4;
+    color: #08a4b4;
+    transition: all 0.8s ease;
+   
+}
+
+#signup:hover {
+    background-color: #08a4b4;
+    box-shadow: 0 0 16px #08a4b4;
+    border: none;
+    color: white;
+    transform: scale(1.05);
+ 
+}
+
+#terms {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #div1,
+    #div2 {
+        width: 100%;
+    }
+
+    #div1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #div1 {
+        min-height: 180px;  /* Ensures the background image is visible */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #div2 {
+        padding-left: 40px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+        max-width: 340px;
+    }
+}
