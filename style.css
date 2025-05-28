@@ -142,7 +142,43 @@ a {
     line-height: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 380px){
+
+       #main {
+        flex-direction: column;
+    }
+
+    #div1,
+    #div2 {
+        width: 100%;
+    }
+
+    #div1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #div1 {
+        min-height: 180px;  /* Ensures the background image is visible */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #div2 {
+        padding-left: 10px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+        max-width: 340px;
+    }
+
+}
+
+@media (min-width: 381px) and (max-width: 767px) {
+
+
+ 
     #main {
         flex-direction: column;
     }
